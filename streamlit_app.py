@@ -23,7 +23,7 @@ def load_trained_pipeline():
 pipeline = load_trained_pipeline()
 
 # App UI Header
-st.title("🍷 AI Wine Sommelier Rating Predictor")
+st.title("🍷 Wine Quality Predictor")
 st.markdown("Predict how wine critics will rate a bottle based on its profile details.")
 
 st.divider()
