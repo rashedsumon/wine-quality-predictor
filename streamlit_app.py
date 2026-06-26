@@ -40,7 +40,10 @@ with col1:
 with col2:
     variety = st.selectbox("Wine Variety / Grape", ["Pinot Noir", "Chardonnay", "Cabernet Sauvignon", "Red Blend", "Bordeaux-style Red Blend", "Sauvignon Blanc", "Syrah", "Riesling", "Merlot"])
 
-
+description = st.text_area(
+    "Wine Sommelier Description / Tasting Notes", 
+    placeholder="e.g., A rich, full-bodied red with notes of dark cherry, leather, robust tannins, and a hint of spice on the finish."
+)
 
 # Inference Action
 if st.button("Predict Expert Rating", type="primary"):
