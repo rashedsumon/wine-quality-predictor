@@ -1,4 +1,5 @@
-import job sklearndoc
+# REMOVE the line that says: import job sklearndoc
+
 import pickle
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -8,6 +9,8 @@ from sklearn.linear_model import Ridge
 from sklearn.pipeline import Pipeline
 from sklearn.metrics import mean_absolute_error, r2_score
 from data_loader import load_wine_data
+
+# ... rest of the model.py code remains exactly the same
 
 def train_and_save_model():
     # 1. Load Data
