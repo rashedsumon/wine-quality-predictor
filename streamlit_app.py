@@ -13,7 +13,7 @@ MODEL_PATH = 'wine_pipeline.pkl'
 @st.cache_resource
 def load_trained_pipeline():
     if not os.path.exists(MODEL_PATH):
-        st.info("Model file not found. Running initial dataset download and training... please stand by.")
+        
         train_and_save_model()
     with open(MODEL_PATH, 'rb') as f:
         pipeline = pickle.load(f)
@@ -23,7 +23,7 @@ def load_trained_pipeline():
 pipeline = load_trained_pipeline()
 
 # App UI Header
-st.title("🍷 AI Wine Rating Predictor")
+st.title("🍷 Wine Rating Predictor")
 st.markdown("Predict how wine critics will rate a bottle based on its core characteristics.")
 
 st.divider()
