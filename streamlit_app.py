@@ -48,7 +48,7 @@ description = st.text_area(
 # Inference Action
 if st.button("Predict Expert Rating", type="primary"):
     if not description.strip():
-        st.warning("Please enter a brief description of the wine's taste to help the AI evaluate it.")
+        
     else:
         # Construct exact DataFrame input expected by pipeline
         input_data = pd.DataFrame([{
