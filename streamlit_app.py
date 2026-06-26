@@ -13,7 +13,7 @@ MODEL_PATH = 'wine_pipeline.pkl'
 @st.cache_resource
 def load_trained_pipeline():
     if not os.path.exists(MODEL_PATH):
-        st.info("Model file not found. Running initial dataset download and training... please stand by.")
+        
         train_and_save_model()
     with open(MODEL_PATH, 'rb') as f:
         pipeline = pickle.load(f)
