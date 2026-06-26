@@ -1,0 +1,14 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Data and Models
+winemag-data*.csv
+wine_pipeline.pkl
+.kagglehub/
+
+# Virtual environments
+venv/
+.venv/
+.env
